@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore Al Wahdah's showcase of manufactured product samples, custom acrylic fabrications, UV printed panels, and commercial print solutions."
+    />
+    <meta
+      name="keywords"
+      content="Al Wahdah Products, Acrylic Displays, UV Printed Panels, Print Collateral, Fabricated Enclosures, Packaging Solutions"
+    />
+    <meta name="author" content="Al Wahdah" />
+    <meta property="og:title" content="Product Showcase | Al Wahdah" />
+    <meta
+      property="og:description"
+      content="Explore high-precision custom fabrications and commercial print samples produced by Al Wahdah."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wahdahae.com/products.html" />
+
+    <title>Products | Al Wahdah — Printing &amp; Fabrication Solutions</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      /* Page-specific inline UI controls for category filters */
+      .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-xs);
+        margin-bottom: var(--space-2xl);
+      }
+      .filter-btn {
+        background: var(--color-light-surface);
+        border: 1px solid var(--color-border);
+        color: var(--color-text-main);
+        padding: 0.625rem 1.25rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        border-radius: var(--radius-sm);
+        cursor: pointer;
+        transition: var(--transition-fast);
+      }
+      .filter-btn:hover {
+        border-color: var(--color-aluminum);
+      }
+      .filter-btn.active {
+        background: var(--color-dark-deep);
+        color: var(--color-text-light);
+        border-color: var(--color-dark-deep);
+      }
+      .product-card-item {
+        transition:
+          opacity 0.25s ease,
+          transform 0.25s ease;
+      }
+    </style>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- ==========================================
+       SITE HEADER / NAVIGATION
+       ========================================== -->
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="index.html" class="brand-logo" aria-label="Al Wahdah">
+          <img
+            src="images/general/wahdah-logo.png"
+            alt="Al Wahdah"
+            class="logo-img"
+            loading="eager"
+          />
+        </a>
+
+        <div class="nav-wrapper">
+          <nav aria-label="Main Navigation">
+            <ul class="nav-menu" id="mobile-navigation">
+              <li><a href="index.html" class="nav-link active">Home</a></li>
+              <li><a href="services.html" class="nav-link">Services</a></li>
+              <li><a href="products.html" class="nav-link">Products</a></li>
+              <li><a href="about.html" class="nav-link">About Us</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+
+              <!-- Mobile Social Navigation -->
+              <li class="nav-social-mobile">
+                <a
+                  href="https://www.instagram.com/wahdah.ae/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  title="Instagram"
+                  class="social-icon-link"
+                >
+                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="https://wa.me/971529286262"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                  title="WhatsApp"
+                  class="social-icon-link"
+                >
+                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="https://www.facebook.com/alwahdah.printingpress/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  title="Facebook"
+                  class="social-icon-link"
+                >
+                  <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Desktop Social Links -->
+          <div class="nav-social-desktop">
+            <a
+              href="https://www.instagram.com/wahdah.ae/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              title="Instagram"
+              class="social-icon-link"
+            >
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://wa.me/971529286262"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              title="WhatsApp"
+              class="social-icon-link"
+            >
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/alwahdah.printingpress/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              title="Facebook"
+              class="social-icon-link"
+            >
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <button
+          class="mobile-nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <!-- ==========================================
+         PAGE HERO
+         ========================================== -->
+      <section class="page-header">
+        <div class="container">
+          <div class="reveal" style="max-width: 760px">
+            <span class="text-eyebrow">Manufacturing Showcase</span>
+            <h1>Our Products &amp; Fabrications</h1>
+            <p class="text-lead">
+              Demonstrating high-precision craftsmanship across print
+              collateral, acrylic structures, and rigid UV direct printing.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+         PRODUCT GALLERY SECTION
+         ========================================== -->
+      <section class="section">
+        <div class="container">
+          <!-- Category Filter Controls -->
+          <div
+            class="filter-bar reveal"
+            role="tablist"
+            aria-label="Product Categories"
+          >
+            <button
+              class="filter-btn active"
+              data-filter="all"
+              role="tab"
+              aria-selected="true"
+            >
+              All Products
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="printing"
+              role="tab"
+              aria-selected="false"
+            >
+              Printing
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="acrylic"
+              role="tab"
+              aria-selected="false"
+            >
+              Acrylic
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="uv-printing"
+              role="tab"
+              aria-selected="false"
+            >
+              UV Printing
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="fabrication"
+              role="tab"
+              aria-selected="false"
+            >
+              Fabrication
+            </button>
+          </div>
+
+          <!-- Product Grid (9 Items) -->
+          <div class="grid grid-3">
+            <!-- Product 01 -->
+            <div class="product-card-item reveal" data-category="acrylic">
+              <div
+                class="card product-card"
+                data-open-modal
+                data-title="Architectural Acrylic Display"
+                data-desc="Precision laser-cut acrylic display stand with flame-polished edges and integrated structural support."
+              >
+                <!-- Replace inner image tag src with images/products/product-01.jpg when ready -->
+                <div
+                  class="media-placeholder"
+                  style="
+                    min-height: 240px;
+                    border-radius: 0;
+                    border: none;
+                    border-bottom: 1px solid var(--color-border);
+                  "
+                >
+                  <!-- <img src="images/products/product-01.jpg" alt="Architectural Acrylic Display" loading="lazy"> -->
+                  <span class="media-placeholder-text"
+                    >images/products/product-01.jpg</span
+                  >
+                </div>
+                <div class="product-card-body">
+                  <span class="text-eyebrow" style="font-size: 0.75rem"
+                    >Acrylic</span
+                  >
+                  <h3 class="product-card-title">
+                    Architectural Acrylic Display
+                  </h3>
+                  <p>
+                    Custom fabricated acrylic display unit crafted with
+                    optically clear polished edges.
+                  </p>
+                  <div style="margin-top: auto; padding-top: var(--space-md)">
+                    <button class="btn btn-sm btn-dark" style="width: 100%">
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 02 -->
+            <div class="product-card-item reveal" data-category="uv-printing">
+              <div
+                class="card product-card"
+                data-open-modal
+                data-title="Industrial Direct-UV Panel"
+                data-desc="High-resolution UV print applied directly onto rigid composite sheet metal for durable visual application."
+              >
+                <!-- Replace inner image tag src with images/products/product-02.jpg when ready -->
+                <div
+                  class="media-placeholder"
+                  style="
+                    min-height: 240px;
+                    border-radius: 0;
+                    border: none;
+                    border-bottom: 1px solid var(--color-border);
+                  "
+                >
+                  <!-- <img src="images/products/product-02.jpg" alt="Industrial Direct-UV Panel" loading="lazy"> -->
+                  <span class="media-placeholder-text"
+                    >images/products/product-02.jpg</span
+                  >
+                </div>
+                <div class="product-card-body">
+                  <span class="text-eyebrow" style="font-size: 0.75rem"
+                    >UV Printing</span
+                  >
+                  <h3 class="product-card-title">Industrial Direct-UV Panel</h3>
+                  <p>
+                    Direct UV print on aluminum composite sheet designed for
+                    durable environmental exposure.
+                  </p>
+                  <div style="margin-top: auto; padding-top: var(--space-md)">
+                    <button class="btn btn-sm btn-dark" style="width: 100%">
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 03 -->
+            <div class="product-card-item reveal" data-category="printing">
+              <div
+                class="card product-card"
+                data-open-modal
+                data-title="Corporate Offset Collateral"
+                data-desc="High-volume multi-page commercial publication featuring spot varnish and heavy cover paperboard stock."
+              >
+                <!-- Replace inner image tag src with images/products/product-03.jpg when ready -->
+                <div
+                  class="media-placeholder"
+                  style="
+                    min-height: 240px;
+                    border-radius: 0;
+                    border: none;
+                    border-bottom: 1px solid var(--color-border);
+                  "
+                >
+                  <!-- <img src="images/products/product-03.jpg" alt="Corporate Offset Collateral" loading="lazy"> -->
+                  <span class="media-placeholder-text"
+                    >images/products/product-03.jpg</span
+                  >
+                </div>
+                <div class="product-card-body">
+                  <span class="text-eyebrow" style="font-size: 0.75rem"
+                    >Printing</span
+                  >
+                  <h3 class="product-card-title">
+                    Corporate Offset Collateral
+                  </h3>
+                  <p>
+                    Commercial offset print run offering exact color balance and
+                    crisp text reproduction.
+                  </p>
+                  <div style="margin-top: auto; padding-top: var(--space-md)">
+                    <button class="btn btn-sm btn-dark" style="width: 100%">
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 04 -->
+            <div class="product-card-item reveal" data-category="fabrication">
+              <div
+                class="card product-card"
+                data-open-modal
+                data-title="Custom Fabricated Enclosure"
+                data-desc="Multi-piece fabricated housing constructed using thermoforming, precision bonding, and mechanical fastening."
+              >
+                <!-- Replace inner image tag src with images/products/product-04.jpg when ready -->
+                <div
+                  class="media-placeholder"
+                  style="
+                    min-height: 240px;
+                    border-radius: 0;
+                    border: none;
+                    border-bottom: 1px solid var(--color-border);
+                  "
+                >
+                  <!-- <img src="images/products/product-04.jpg" alt="Custom Fabricated Enclosure" loading="lazy"> -->
+                  <span class="media-placeholder-text"
+                    >images/products/product-04.jpg</span
+                  >
+                </div>
+                <div class="product-card-body">
+                  <span class="text-eyebrow" style="font-size: 0.75rem"
+                    >Fabrication</span
+                  >
+                  <h3 class="product-card-title">
+                    Custom Fabricated Enclosure
+                  </h3>
+                  <p>
+                    Engineered structural enclosure assembled with rigid polymer
+                    components.
+                  </p>
+                  <div style="margin-top: auto; padding-top: var(--space-md)">
+                    <button class="btn btn-sm btn-dark" style="width: 100%">
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 05 -->
+            <div class="product-card-item reveal" data-category="acrylic">
+              <div
+                class="card product-card"
+                data-open-modal
+                data-title="Illuminated Acrylic Signage"
+                data-desc="Layered acrylic signage unit engineered for backlighting with laser-etched surface graphics."
+              >
+                <!-- Replace inner image tag src with images/products/product-05.jpg when ready -->
+                <div
+                  class="media-placeholder"
+                  style="
+                    min-height: 240px;
+                    border-radius: 0;
+                    border: none;
+                    border-bottom: 1px solid var(--color-border);
+                  "
+                >
+                  <!-- <img src="images/products/product-05.jpg" alt="Illuminated Acrylic Signage" loading="lazy"> -->
+                  <span class="media-placeholder-text"
+                    >images/products/product-05.jpg</span
+                  >
+                </div>
+                <div class="product-card-body">
+                  <span class="text-eyebrow" style="font-size: 0.75rem"
+                    >Acrylic</span
+                  >
+                  <h3 class="product-card-title">
+                    Illuminated Acrylic Signage
+                  </h3>
+                  <p>
+                    Laser-etched optical grade acrylic panel designed for
+                    internal lighting integration.
+                  </p>
+                  <div style="margin-top: auto; padding-top: var(--space-md)">
+                    <button class="btn btn-sm btn-dark" style="width: 100%">
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 06 -->
+            <div class="product-card-item reveal" data-category="uv-printing">
+              <div
+                class="card product-card"
+                data-open-modal
+                data-title="UV Printed Architectural Glass"
+                data-desc="Specialized direct UV print application on tempered glass sheet providing light-diffusing imagery."
+              >
+                <!-- Replace inner image tag src with images/products/product-06.jpg when ready -->
+                <div
+                  class="media-placeholder"
+                  style="
+                    min-height: 240px;
+                    border-radius: 0;
+                    border: none;
+                    border-bottom: 1px solid var(--color-border);
+                  "
+                >
+                  <!-- <img src="images/products/product-06.jpg" alt="UV Printed Architectural Glass" loading="lazy"> -->
+                  <span class="media-placeholder-text"
+                    >images/products/product-06.jpg</span
+                  >
+                </div>
+                <div class="product-card-body">
+                  <span class="text-eyebrow" style="font-size: 0.75rem"
+                    >UV Printing</span
+                  >
+                  <h3 class="product-card-title">UV Printed Glass Sheet</h3>
+                  <p>
+                    Direct flatbed printing on glass substrate using
+                    fade-resistant ultraviolet-cured inks.
+                  </p>
+                  <div style="margin-top: auto; padding-top: var(--space-md)">
+                    <button class="btn btn-sm btn-dark" style="width: 100%">
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 07 -->
+            <div class="product-card-item reveal" data-category="printing">
+              <div
+                class="card product-card"
+                data-open-modal
+                data-title="Flexographic Packaging Box"
+                data-desc="High-speed flexographic print run on heavy corrugated kraft board for commercial distribution."
+              >
+                <!-- Replace inner image tag src with images/products/product-07.jpg when ready -->
+                <div
+                  class="media-placeholder"
+                  style="
+                    min-height: 240px;
+                    border-radius: 0;
+                    border: none;
+                    border-bottom: 1px solid var(--color-border);
+                  "
+                >
+                  <!-- <img src="images/products/product-07.jpg" alt="Flexographic Packaging Box" loading="lazy"> -->
+                  <span class="media-placeholder-text"
+                    >images/products/product-07.jpg</span
+                  >
+                </div>
+                <div class="product-card-body">
+                  <span class="text-eyebrow" style="font-size: 0.75rem"
+                    >Printing</span
+                  >
+                  <h3 class="product-card-title">Flexographic Packaging Box</h3>
+                  <p>
+                    Industrial packaging box featuring durable flexographic ink
+                    application.
+                  </p>
+                  <div style="margin-top: auto; padding-top: var(--space-md)">
+                    <button class="btn btn-sm btn-dark" style="width: 100%">
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 08 -->
+            <div class="product-card-item reveal" data-category="fabrication">
+              <div
+                class="card product-card"
+                data-open-modal
+                data-title="Precision Metal &amp; Acrylic Plaque"
+                data-desc="Hybrid fabricated plaque combining brushed aluminum backplate with standoff acrylic clear covers."
+              >
+                <!-- Replace inner image tag src with images/products/product-08.jpg when ready -->
+                <div
+                  class="media-placeholder"
+                  style="
+                    min-height: 240px;
+                    border-radius: 0;
+                    border: none;
+                    border-bottom: 1px solid var(--color-border);
+                  "
+                >
+                  <!-- <img src="images/products/product-08.jpg" alt="Precision Metal & Acrylic Plaque" loading="lazy"> -->
+                  <span class="media-placeholder-text"
+                    >images/products/product-08.jpg</span
+                  >
+                </div>
+                <div class="product-card-body">
+                  <span class="text-eyebrow" style="font-size: 0.75rem"
+                    >Fabrication</span
+                  >
+                  <h3 class="product-card-title">Precision Composite Plaque</h3>
+                  <p>
+                    Hybrid multi-material assembly using aluminum and clear
+                    acrylic standoff elements.
+                  </p>
+                  <div style="margin-top: auto; padding-top: var(--space-md)">
+                    <button class="btn btn-sm btn-dark" style="width: 100%">
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 09 -->
+            <div class="product-card-item reveal" data-category="printing">
+              <div
+                class="card product-card"
+                data-open-modal
+                data-title="Screen Printed Industrial Plate"
+                data-desc="Heavy-deposit screen print on synthetic substrate engineered for tactile durability and chemical resistance."
+              >
+                <!-- Replace inner image tag src with images/products/product-09.jpg when ready -->
+                <div
+                  class="media-placeholder"
+                  style="
+                    min-height: 240px;
+                    border-radius: 0;
+                    border: none;
+                    border-bottom: 1px solid var(--color-border);
+                  "
+                >
+                  <!-- <img src="images/products/product-09.jpg" alt="Screen Printed Industrial Plate" loading="lazy"> -->
+                  <span class="media-placeholder-text"
+                    >images/products/product-09.jpg</span
+                  >
+                </div>
+                <div class="product-card-body">
+                  <span class="text-eyebrow" style="font-size: 0.75rem"
+                    >Printing</span
+                  >
+                  <h3 class="product-card-title">
+                    Screen Printed Control Plate
+                  </h3>
+                  <p>
+                    Industrial plate printed with dense screen inks for maximum
+                    wear resistance.
+                  </p>
+                  <div style="margin-top: auto; padding-top: var(--space-md)">
+                    <button class="btn btn-sm btn-dark" style="width: 100%">
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+         CTA SECTION
+         ========================================== -->
+      <section
+        class="section section-dark"
+        style="border-top: 1px solid var(--color-border-dark)"
+      >
+        <div
+          class="container text-center reveal"
+          style="max-width: 800px; margin: 0 auto"
+        >
+          <span class="text-eyebrow">Custom Specifications</span>
+          <h2>Have a Specific Product Prototype in Mind?</h2>
+          <p style="margin-bottom: var(--space-xl)">
+            We manufacture custom products tailored strictly to client
+            architectural and branding blueprints.
+          </p>
+          <div class="hero-actions" style="justify-content: center">
+            <a href="contact.html" class="btn btn-primary"
+              >Submit Design Specs</a
+            >
+            <a href="services.html" class="btn btn-secondary"
+              >Review Manufacturing Services</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========================================
+       PRODUCT LIGHTBOX / MODAL
+       ========================================== -->
+    <div
+      id="product-modal"
+      style="
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 2000;
+        background-color: rgba(15, 17, 19, 0.85);
+        align-items: center;
+        justify-content: center;
+        padding: var(--space-lg);
+      "
+      aria-hidden="true"
+      role="dialog"
+    >
+      <div
+        style="
+          background-color: var(--color-light-surface);
+          max-width: 600px;
+          width: 100%;
+          border-radius: var(--radius-sm);
+          border: 1px solid var(--color-border);
+          overflow: hidden;
+          position: relative;
+        "
+      >
+        <button
+          data-close-modal
+          aria-label="Close modal"
+          style="
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            z-index: 10;
+            background: var(--color-dark-deep);
+            color: var(--color-text-light);
+            border: none;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            border-radius: 2px;
+          "
+        >
+          &times;
+        </button>
+        <div class="modal-media-slot"></div>
+        <div style="padding: var(--space-lg)">
+          <h3 class="modal-title" style="margin-bottom: var(--space-xs)">
+            Product Title
+          </h3>
+          <p class="modal-description">Product Description</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+       SITE FOOTER
+       ========================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="brand-logo">
+              AL WAHDAH<span class="accent-dot"></span>
+            </a>
+            <p>
+              Professional printing and fabrication solutions crafted with
+              precision, creativity, and attention to detail.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Services</h4>
+            <ul class="footer-links">
+              <li><a href="services.html#offset">Offset Printing</a></li>
+              <li><a href="services.html#acrylic">Acrylic Fabrication</a></li>
+              <li><a href="services.html#uv">UV Printing</a></li>
+              <li><a href="services.html#flexo">Flexo Printing</a></li>
+              <li><a href="services.html#screen">Screen Printing</a></li>
+              <li><a href="services.html#digital">Digital Printing</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Corporate</h4>
+            <ul class="footer-links">
+              <li>
+                <span
+                  style="
+                    display: block;
+                    color: var(--color-aluminum);
+                    margin-bottom: 4px;
+                  "
+                  >Domain: wahdahae.com</span
+                >
+              </li>
+              <li><a href="contact.html">Get in Touch</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>&copy; Al Wahdah. All rights reserved.</div>
+          <div>wahdahae.com | Printing &amp; Fabrication Solutions</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

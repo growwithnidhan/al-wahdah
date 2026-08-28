@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with Al Wahdah for custom printing and acrylic fabrication enquiries, quotes, and project discussions."
+    />
+    <meta
+      name="keywords"
+      content="Contact Al Wahdah, Print Quotes, Fabrication Enquiries, Al Wahdah Email, Customer Support"
+    />
+    <meta name="author" content="Al Wahdah" />
+    <meta property="og:title" content="Contact Us | Al Wahdah" />
+    <meta
+      property="og:description"
+      content="Get in touch with Al Wahdah for custom printing and acrylic fabrication enquiries, quotes, and project discussions."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wahdahae.com/contact.html" />
+
+    <title>Contact Us | Al Wahdah — Printing &amp; Fabrication Solutions</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      /* Inline helper styling for contact page elements */
+      .contact-info-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 var(--space-xl) 0;
+      }
+      .contact-info-item {
+        display: flex;
+        align-items: flex-start;
+        gap: var(--space-md);
+        margin-bottom: var(--space-lg);
+      }
+      .contact-icon-box {
+        width: 40px;
+        height: 40px;
+        border-radius: var(--radius-sm);
+        background-color: var(--color-light-surface);
+        border: 1px solid var(--color-border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        color: var(--color-accent-brown);
+      }
+      .form-group {
+        margin-bottom: var(--space-md);
+      }
+      .form-label {
+        display: block;
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-bottom: var(--space-xs);
+        color: var(--color-text-main);
+      }
+      .form-control {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        font-family: inherit;
+        background-color: var(--color-light-surface);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-sm);
+        color: var(--color-text-main);
+        transition:
+          border-color 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      .form-control:focus {
+        outline: none;
+        border-color: var(--color-accent-brown);
+        box-shadow: 0 0 0 3px rgba(163, 116, 70, 0.15);
+      }
+      textarea.form-control {
+        resize: vertical;
+        min-height: 140px;
+      }
+      .form-status-message {
+        display: none;
+        padding: var(--space-md);
+        margin-top: var(--space-md);
+        border-radius: var(--radius-sm);
+        font-size: 0.9375rem;
+      }
+      .form-status-message.success {
+        display: block;
+        background-color: #e6f4ea;
+        color: #137333;
+        border: 1px solid #ceead6;
+      }
+      .form-status-message.error {
+        display: block;
+        background-color: #fce8e6;
+        color: #c5221f;
+        border: 1px solid #fad2cf;
+      }
+    </style>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- ==========================================
+       SITE HEADER / NAVIGATION
+       ========================================== -->
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="index.html" class="brand-logo" aria-label="Al Wahdah">
+          <img
+            src="images/general/wahdah-logo.png"
+            alt="Al Wahdah"
+            class="logo-img"
+            loading="eager"
+          />
+        </a>
+
+        <div class="nav-wrapper">
+          <nav aria-label="Main Navigation">
+            <ul class="nav-menu" id="mobile-navigation">
+              <li><a href="index.html" class="nav-link active">Home</a></li>
+              <li><a href="services.html" class="nav-link">Services</a></li>
+              <li><a href="products.html" class="nav-link">Products</a></li>
+              <li><a href="about.html" class="nav-link">About Us</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+
+              <!-- Mobile Social Navigation -->
+              <li class="nav-social-mobile">
+                <a
+                  href="https://www.instagram.com/wahdah.ae/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  title="Instagram"
+                  class="social-icon-link"
+                >
+                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="https://wa.me/971529286262"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                  title="WhatsApp"
+                  class="social-icon-link"
+                >
+                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="https://www.facebook.com/alwahdah.printingpress/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  title="Facebook"
+                  class="social-icon-link"
+                >
+                  <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Desktop Social Links -->
+          <div class="nav-social-desktop">
+            <a
+              href="https://www.instagram.com/wahdah.ae/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              title="Instagram"
+              class="social-icon-link"
+            >
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://wa.me/971529286262"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              title="WhatsApp"
+              class="social-icon-link"
+            >
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/alwahdah.printingpress/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              title="Facebook"
+              class="social-icon-link"
+            >
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <button
+          class="mobile-nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ==========================================
+         CONTACT HERO
+         ========================================== -->
+      <section class="page-header">
+        <div class="container">
+          <div class="reveal" style="max-width: 760px">
+            <span class="text-eyebrow">Get In Touch</span>
+            <h1>Start Your Production Enquiry</h1>
+            <p class="text-lead">
+              Discuss your printing, acrylic fabrication, or custom
+              manufacturing requirements with our team.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+         CONTACT FORM & INFORMATION SECTION
+         ========================================== -->
+      <section class="section">
+        <div class="container">
+          <div
+            class="grid grid-2"
+            style="gap: var(--space-2xl); align-items: start"
+          >
+            <!-- Contact Information -->
+            <div class="reveal">
+              <span class="text-eyebrow">Direct Contact</span>
+              <h2>Reach Our Team</h2>
+              <p style="margin-bottom: var(--space-xl)">
+                For technical consultations, custom quote requests, or project
+                evaluations, connect with us using the details below.
+              </p>
+
+              <ul class="contact-info-list">
+                <li class="contact-info-item">
+                  <div class="contact-icon-box">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                      ></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong
+                      style="
+                        display: block;
+                        font-size: 0.875rem;
+                        text-transform: uppercase;
+                        color: var(--color-aluminum);
+                        letter-spacing: 0.05em;
+                      "
+                      >Email Address</strong
+                    >
+                    <a
+                      href="mailto:info@wahdahae.com"
+                      style="
+                        font-size: 1.125rem;
+                        font-weight: 600;
+                        color: var(--color-dark-deep);
+                      "
+                      >info@wahdahae.com</a
+                    >
+                  </div>
+                </li>
+
+                <li class="contact-info-item">
+                  <div class="contact-icon-box">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong
+                      style="
+                        display: block;
+                        font-size: 0.875rem;
+                        text-transform: uppercase;
+                        color: var(--color-aluminum);
+                        letter-spacing: 0.05em;
+                      "
+                      >Phone Number</strong
+                    >
+                    <span
+                      style="
+                        font-size: 1.125rem;
+                        font-weight: 600;
+                        color: var(--color-dark-deep);
+                      "
+                      >[PHONE NUMBER]</span
+                    >
+                  </div>
+                </li>
+
+                <li class="contact-info-item">
+                  <div class="contact-icon-box">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      ></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong
+                      style="
+                        display: block;
+                        font-size: 0.875rem;
+                        text-transform: uppercase;
+                        color: var(--color-aluminum);
+                        letter-spacing: 0.05em;
+                      "
+                      >Business Address</strong
+                    >
+                    <span
+                      style="
+                        font-size: 1.125rem;
+                        font-weight: 600;
+                        color: var(--color-dark-deep);
+                      "
+                      >[BUSINESS ADDRESS]</span
+                    >
+                  </div>
+                </li>
+
+                <li class="contact-info-item">
+                  <div class="contact-icon-box">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong
+                      style="
+                        display: block;
+                        font-size: 0.875rem;
+                        text-transform: uppercase;
+                        color: var(--color-aluminum);
+                        letter-spacing: 0.05em;
+                      "
+                      >Business Hours</strong
+                    >
+                    <span
+                      style="
+                        font-size: 1.125rem;
+                        font-weight: 600;
+                        color: var(--color-dark-deep);
+                      "
+                      >[BUSINESS HOURS]</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="reveal">
+              <div class="card" style="padding: var(--space-xl)">
+                <h3 style="margin-bottom: var(--space-md)">Send an Enquiry</h3>
+
+                <!-- Form configured for future integration (Formspree, EmailJS, etc.) -->
+                <form
+                  id="contact-form"
+                  action="https://formspree.io/f/your-form-id"
+                  method="POST"
+                  novalidate
+                >
+                  <div class="form-group">
+                    <label for="name" class="form-label">Name *</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      required
+                      placeholder="Your full name"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email" class="form-label">Email *</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      required
+                      placeholder="name@company.com"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      class="form-control"
+                      placeholder="Contact telephone number"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="company" class="form-label">Company</label>
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      class="form-control"
+                      placeholder="Organization name"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message" class="form-label">Message *</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="form-control"
+                      required
+                      placeholder="Describe your project, material specifications, or enquiry details..."
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    style="width: 100%"
+                  >
+                    Send Enquiry
+                  </button>
+
+                  <div id="form-status" class="form-status-message"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+         CTA SECTION
+         ========================================== -->
+      <section
+        class="section section-dark"
+        style="border-top: 1px solid var(--color-border-dark)"
+      >
+        <div
+          class="container text-center reveal"
+          style="max-width: 800px; margin: 0 auto"
+        >
+          <span class="text-eyebrow">Ready to Collaborate?</span>
+          <h2>High-Precision Printing &amp; Fabrication Solutions</h2>
+          <p style="margin-bottom: var(--space-xl)">
+            Submit your requirements or review our complete range of
+            manufacturing capabilities.
+          </p>
+          <div class="hero-actions" style="justify-content: center">
+            <a href="services.html" class="btn btn-primary">Explore Services</a>
+            <a href="products.html" class="btn btn-secondary"
+              >View Product Showcase</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========================================
+       SITE FOOTER
+       ========================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="brand-logo">
+              AL WAHDAH<span class="accent-dot"></span>
+            </a>
+            <p>
+              Professional printing and fabrication solutions crafted with
+              precision, creativity, and attention to detail.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Services</h4>
+            <ul class="footer-links">
+              <li><a href="services.html#offset">Offset Printing</a></li>
+              <li><a href="services.html#acrylic">Acrylic Fabrication</a></li>
+              <li><a href="services.html#uv">UV Printing</a></li>
+              <li><a href="services.html#flexo">Flexo Printing</a></li>
+              <li><a href="services.html#screen">Screen Printing</a></li>
+              <li><a href="services.html#digital">Digital Printing</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Corporate</h4>
+            <ul class="footer-links">
+              <li>
+                <span
+                  style="
+                    display: block;
+                    color: var(--color-aluminum);
+                    margin-bottom: 4px;
+                  "
+                  >Domain: wahdahae.com</span
+                >
+              </li>
+              <li><a href="contact.html">Get in Touch</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>&copy; Al Wahdah. All rights reserved.</div>
+          <div>wahdahae.com | Printing &amp; Fabrication Solutions</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
