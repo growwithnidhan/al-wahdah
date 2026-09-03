@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://wahdahae.com/index.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://wahdahae.com/images/optimized/hero.jpg</image:loc>
+      <image:title>Al Wahdah Precision Printing and Fabrication Facility</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wahdahae.com/services.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://wahdahae.com/images/optimized/modern-printing-press-produces-multi-colored-printouts-accurately-generated-by-ai.jpg</image:loc>
+      <image:title>Industrial Printing Press Capabilities</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wahdahae.com/products.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://wahdahae.com/images/products/product-01.jpg</image:loc>
+      <image:title>Architectural Acrylic Display</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://wahdahae.com/images/products/product-02.jpg</image:loc>
+      <image:title>Industrial Direct UV Panel</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wahdahae.com/about.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://wahdahae.com/images/optimized/portrait-worker-overalls-steel-factory-background.jpg</image:loc>
+      <image:title>Al Wahdah Quality Craftsmanship</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wahdahae.com/contact.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

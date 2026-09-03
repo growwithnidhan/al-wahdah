@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Disallow private and system paths if any
+Disallow: /scratch/
+Disallow: /.system_generated/
+
+Sitemap: https://wahdahae.com/sitemap.xml
